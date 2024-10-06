@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+<link rel="stylesheet" href="comparison.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- nav bar ka code yaha tk hy -->
+    <h1 class="heading">Car Comparison</h1>
+    <div class="container">
+        <div class="box" onclick="openModal('car1')">
+            <img src="2;1.png" alt="Car Model A">
+            <h4>Car Comparison: Lexus GX vs Land Rover Defender</h4>
+        </div>
+        <div class="box" onclick="openModal('car2')">
+            <img src="2;2.jpg" alt="Car Model B">
+            <h4>Car Comparison: Toyota Camry vs Hyundai Elantra</h4>
+        </div>
+        <div class="box" onclick="openModal('car3')">
+            <img src="2;3.jpg" alt="Car Model C">
+            <h4>Car Comparison: Toyota RAV4 vs Nissan X-Terra</h4>
+        </div>
+        <div class="box" onclick="openModal('car4')">
+            <img src="2;4.jpg" alt="Car Model D">
+            <h4>Car Comparison: Suzuki Swift vs Mitsubishi Mirage</h4>
+        </div>
+        <div class="box" onclick="openModal('car5')">
+            <img src="2;5.jpg" alt="Car Model E">
+            <h4>Car Comparison: Suzuki Swift vs Mitsubishi Mirage</h4>
+        </div>
+        <div class="box" onclick="openModal('car6')">
+            <img src="2;6.jpg" alt="Car Model F">
+            <h4>Car Comparison: Mercedes S-Class vs BMW 7 Series</h4>
+        </div>
+        <div class="box" onclick="openModal('car7')">
+            <img src="2;7.jpg" alt="Car Model G">
+            <h4>Car Comparison: Kia Sportage vs Honda HR-V</h4>
+        </div>
+        <div class="box" onclick="openModal('car8')">
+            <img src="2;8.png" alt="Car Model H">
+            <h4>Car Comparison: BMW X5 vs Audi Q7</h4>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="pic1.png" alt="">
+            <p id="modal-engine"></p>
+            <p id="modal-horsepower"></p>
+            <p id="modal-efficiency"></p>
+        </div>
+    </div>
+    <!-- pagination ka code stART HO RAHA HY -->
+    <div class="pagination">
+        <a href="comparison.html"><</a>
+        <a href="comparison.html"  class="" >1</a>
+        <a href="comparison2.html" class="active" >2</a>
+        <a href="comparison3.html" class="" >3</a>
+        <a href="comparison4.html" class="" >4</a>
+        <a href="comparison3.html">></a>
+    </div>
+    <!-- <footer> start ho rahi hy yaha sy</footer> -->
+   
+    <script src="comparison.js"></script>
+</body>
+</html>

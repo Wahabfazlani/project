@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+<link rel="stylesheet" href="comparison.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- nav bar ka code yaha tk hy -->
+    <h1 class="heading">Car Comparison</h1>
+    <div class="container">
+        <div class="box" onclick="openModal('car1')">
+            <img src="3;1.jpg" alt="Car Model A">
+            <h4>Car Comparison: Ford Explorer vs Chevrolet Traverse</h4>
+        </div>
+        <div class="box" onclick="openModal('car2')">
+            <img src="3;2.png" alt="Car Model B">
+            <h4>Car Comparison: Nissan Pathfinder vs Ford Explorer</h4>
+        </div>
+        <div class="box" onclick="openModal('car3')">
+            <img src="3;3.png" alt="Car Model C">
+            <h4>Car Comparison: Dodge Challenger vs Ford Mustang</h4>
+        </div>
+        <div class="box" onclick="openModal('car4')">
+            <img src="3;4.png" alt="Car Model D">
+            <h4>Car Comparison: Kia Picanto vs Swift</h4>
+        </div>
+        <div class="box" onclick="openModal('car5')">
+            <img src="3;5.jpg" alt="Car Model E">
+            <h4>Car Comparison: Lexus LX vs BMW X7</h4>
+        </div>
+        <div class="box" onclick="openModal('car6')">
+            <img src="3;6.jpg" alt="Car Model F">
+            <h4>Car Comparison: Hyundai Elantra vs Toyota Corolla</h4>
+        </div>
+        <div class="box" onclick="openModal('car7')">
+            <img src="3;7.jpg" alt="Car Model G">
+            <h4>Car Comparison: Kia Sportage Vs Hyundai Tucson</h4>
+        </div>
+        <div class="box" onclick="openModal('car8')">
+            <img src="3;8.jpg" alt="Car Model H">
+            <h4>Car Comparison: Toyota Yaris Vs Honda City</h4>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="pic1.png" alt="">
+            <p id="modal-engine"></p>
+            <p id="modal-horsepower"></p>
+            <p id="modal-efficiency"></p>
+        </div>
+    </div>
+    <!-- pagination ka code stART HO RAHA HY -->
+    <div class="pagination">
+        <a href="comparison2.html"><</a>
+        <a href="comparison.html"  class="" >1</a>
+        <a href="comparison2.html" class="" >2</a>
+        <a href="comparison3.html" class="active" >3</a>
+        <a href="comparison4.html" class="" >4</a>
+        <a href="comparison4.html">></a>
+    </div>
+    <!-- <footer> start ho rahi hy yaha sy</footer> -->
+   
+    <script src="comparison.js"></script>
+</body>
+</html>
